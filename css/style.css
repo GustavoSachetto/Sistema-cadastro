@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+:root {
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+    text-transform: uppercase;
+    background-color: #d4d4d4;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+nav a {
+    font: 600 18px var(--font);
+    color: black;
+}
+
+nav input {
+    font-size: 18px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+nav a, nav input {
+    margin: 0 20px;
+}
+
+nav img {
+    position: absolute;
+    width: 27px;
+    margin: 2px 0 0 -60px;
+}
+
+main {
+    min-height: calc(100vh - 241px);
+    padding-bottom: 100px;
+    background-color: #eeeeee;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 200px;
+}
+
+article section {
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+article>section h2 {
+    font-size: 26px;
+}
+
+article>section p{
+    margin-top: 10px;
+}
+
+article>section a{
+    font-size: 23px;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 0 40px 0 40px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    background-color: #dadada;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #dadada;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #551A8B;
+}

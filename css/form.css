@@ -1,0 +1,40 @@
+
+form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+form h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+form button {
+    font-size: 23px;
+    padding: 7px;
+    border-radius: 7px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    background-color: #dadada;
+}
