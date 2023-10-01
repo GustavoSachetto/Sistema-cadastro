@@ -15,14 +15,14 @@
 
         <main>
             <article>
-                <form action="" method="post">
+                <form action="controller/cadastrarRecebe.php" method="post">
                     <fieldset>
                         <h2>Cadastro notícia</h2>
-                        <input type="text" name="txtTitulo" id="txtTitulo" placeholder="Titulo da notícia">
-                        <input type="text" name="txtCategoria" id="txtCategoria" placeholder="Categoria da notícia">
-                        <textarea name="txtConteudo" id="txtConteudo" placeholder="Conteúdo da notícia" cols="30" rows="10"></textarea>
+                        <input type="text" name="txtTitulo" id="txtTitulo" minlength="4" maxlength="30" placeholder="Titulo da notícia" required>
+                        <input type="text" name="txtCategoria" id="txtCategoria" minlength="2" maxlength="20" placeholder="Categoria da notícia" required>
+                        <textarea name="txtConteudo" id="txtConteudo" minlength="30" maxlength="250" placeholder="Conteúdo da notícia" cols="30" rows="10" required></textarea>
                     </fieldset>
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit" class="btn-padrao">Cadastrar</button>
                 </form>
             </article>
         </main>

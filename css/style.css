@@ -9,6 +9,10 @@
     --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::selection {
+    background-color: #8080805b;
+}
+
 body {
     font-family: var(--font);
 }
@@ -30,6 +34,11 @@ h1 {
 nav a {
     font: 600 18px var(--font);
     color: black;
+    transform: 200ms linear;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
 }
 
 nav input {
@@ -43,10 +52,22 @@ nav a, nav input {
     margin: 0 20px;
 }
 
-nav img {
-    position: absolute;
+nav button {
     width: 27px;
+    height: 27px;
     margin: 2px 0 0 -60px;
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    transition: 200ms linear;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+nav img {
+    width: 27px;
 }
 
 main {
@@ -72,6 +93,11 @@ article section {
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
+    transition: 200ms linear;
+}
+
+article section:hover {
+    box-shadow: 0px 0px 10px #00000023;
 }
 
 article>section h2 {
@@ -91,6 +117,11 @@ article>section a{
     color: black;
     cursor: pointer;
     background-color: #dadada;
+    transition: 250ms ease;
+}
+
+.btn-padrao:hover {
+    background-color: #69696967;
 }
 
 footer {

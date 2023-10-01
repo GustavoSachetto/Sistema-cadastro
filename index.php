@@ -10,11 +10,11 @@
     </head>
     <body>
         <?php 
-        require_once('layouts/header.php');
+            require_once('layouts/header.php');
 
-        require_once('controller/noticias.php');
+            require_once('controller/noticias.php');
 
-        require_once('layouts/footer.php');
+            require_once('layouts/footer.php');
         ?>
     </body>
 </html>
