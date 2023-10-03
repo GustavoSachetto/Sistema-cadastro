@@ -15,7 +15,7 @@
 
         <main>
             <article>
-                <form action="controller/cadastrarRecebe.php" method="post">
+                <form action="" method="post">
                     <fieldset>
                         <h2>Cadastro notícia</h2>
                         <input type="text" name="txtTitulo" id="txtTitulo" minlength="4" maxlength="30" placeholder="Titulo da notícia" required>
@@ -27,6 +27,9 @@
             </article>
         </main>
 
-        <?php require_once('layouts/footer.php') ?>
+        <?php 
+            include ('controller/cadastrarRecebe.php');
+            require_once('layouts/footer.php');
+        ?>
     </body>
 </html>
