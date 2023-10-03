@@ -102,6 +102,18 @@ article section:hover {
 
 article>section h2 {
     font-size: 26px;
+    margin-bottom: 10px;
+}
+article>h2 {
+    margin-top: 20px;
+}
+
+article>h2>a:hover{
+    border-bottom: 1px solid #551A8B;
+}
+
+article>section h3 {
+    font: bold 23px;
 }
 
 article>section p{
