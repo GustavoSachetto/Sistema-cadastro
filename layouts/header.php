@@ -1,7 +1,7 @@
 <header>
     <h1>Logo</h1>
     <nav>
-        <form action="" method="post">
+        <form action="" method="get">
         <a href="cadastrarNoticias.php">Cadastrar Notícias</a>
         <a href="index.php">Exibir Notícias</a>
             <input type="text" name="txtPesquisa" id="txtPesquisa">
@@ -9,5 +9,12 @@
         </form>
     </nav>
 </header>
-
-<?php ?>
+<?php 
+    $busca = " ORDER BY codNoticia DESC";
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+        if (empty($_GET['txtPesquisa']) == false) {
+            $termoBusca = addslashes($_GET['txtPesquisa']);
+            $busca = " WHERE titulo LIKE '%$termoBusca%' OR tipoCategoria LIKE '%$termoBusca%'";
+        }
+    } 
+?>
