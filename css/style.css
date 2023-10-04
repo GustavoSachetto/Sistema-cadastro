@@ -94,6 +94,7 @@ article section {
     justify-content: space-between;
     background-color: white;
     transition: 200ms linear;
+    word-break: break-word;
 }
 
 article section:hover {
