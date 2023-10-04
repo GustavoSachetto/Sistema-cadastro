@@ -11,13 +11,7 @@
     <body>
         <?php 
             require_once('layouts/header.php');
-
-            echo "<main><article>";
-
             require_once('controller/noticias.php');
-
-            echo "</article></main>";
-
             require_once('layouts/footer.php');
         ?>
     </body>
