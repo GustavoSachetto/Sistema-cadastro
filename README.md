@@ -1,6 +1,8 @@
 # Sistema de cadastro
 
-Sistema de cadastro é um projeto onde através do site é possivel cadastrar e pesquisar noticías. Foi utilizado como base a __conexão com o banco de dados através do PDO.__ 
+Sistema de cadastro é uma projeto baseado em uma prova __BACK-END__ onde através do site é possivel cadastrar e pesquisar noticías. __Foi utilizado como base a conexão com o banco de dados através do PDO.__ 
+
+__Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
 ## Tecnologias utilizadas:
 
