@@ -6,7 +6,7 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
 ## Tecnologias utilizadas:
 
-* __PHP:__ Ligação do banco atráves do __PDO.__
+* __PHP:__ Conexão do banco atráves do __PDO__ e todas as fuções de consulta ou cadastro das notícias.
   
 * __SQL:__ Criação do banco de dados utilizando principalmente __PK__ e __FK__ nas tabelas.
 
