@@ -13,6 +13,8 @@
 
         $noticias = $conexao -> consultaBanco(NOTICIA . $busca);
         
+        echo "<main><article>";
+        
         if (empty($noticias) == true) {
             echo "<h2>Não foi possivel localizar nenhuma notícia que contenha: <a href='cadastrarNoticias.php'>$termoBusca</a></h2>";
         } else {
@@ -24,7 +26,6 @@
                 }
             }
     
-            echo "<main><article>";
             foreach ($noticias as $noticia) {
                 $titulo = $noticia['titulo'];
                 $conteudo = $noticia['conteudo'];
@@ -41,11 +42,13 @@
                     </section>
                 ";
             }
-            echo "</article></main>";
+            
         }
 
     } else {
         echo "<h2>Não há notícias cadastradas! <a href='cadastrarNoticias.php'>Cadastrar Notícias.</a></h2>";
     }
+
+    echo "</article></main>";
 
 ?>
