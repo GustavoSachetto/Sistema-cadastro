@@ -24,8 +24,8 @@
                         return $categoria['tipo'];
                     }
                 }
-            }
-    
+            }            
+
             foreach ($noticias as $noticia) {
                 $titulo = $noticia['titulo'];
                 $conteudo = $noticia['conteudo'];
@@ -34,9 +34,9 @@
                 echo "
                     <section>
                         <div>
-                            <h2>$titulo</h2>
-                            <h3>$tipo</h3>
-                            <p>$conteudo</p>
+                            <h2>" . stripslashes($titulo) . "</h2>
+                            <h3>" . stripslashes($tipo) . "</h3>
+                            <p>" . stripslashes($conteudo) . "</p>
                         </div>
                         <a href='' class='btn-padrao'>Acessar</a>
                     </section>
