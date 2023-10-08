@@ -49,3 +49,15 @@ main form button {
 .btn-padrao:hover {
     background-color: #69696967;
 }
+
+form fieldset p {
+    margin: 10px 0;
+}
+
+.sucesso {
+    color: #448f44;
+}
+
+.erro {
+    color: #c43333;
+}

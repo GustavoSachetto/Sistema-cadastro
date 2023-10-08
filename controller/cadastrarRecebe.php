@@ -9,7 +9,13 @@
         $cadCategoria = addslashes($_POST['txtCategoria']);
         $cadTitulo = addslashes($_POST['txtTitulo']);
         $cadConteudo = addslashes($_POST['txtConteudo']);
-
-        $conexao -> insereNoticia($cadCategoria, $cadTitulo, $cadConteudo);
+        
+        $resultado = $conexao -> insereNoticia($cadCategoria, $cadTitulo, $cadConteudo);
+        
+        if ($resultado === true) {
+            echo "<p class='sucesso'>Notícia cadastrada com sucesso!</p>";
+        } else {
+            echo "<p class='erro'>Notícia não foi cadastrada!</p>";
+        }
     }
 ?>
