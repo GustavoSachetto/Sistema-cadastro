@@ -51,6 +51,11 @@
             $insereNoticia -> bindValue(':conteudo', $cadConteudo);
             $insereNoticia -> bindValue(':tipoCategoria', $tipoCategoria);
             $insereNoticia -> execute();
+
+            $consulta = "SELECT * FROM noticia WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND tipoCategoria = '$tipoCategoria'";
+            $resultado = $this -> consultaBanco($consulta);
+
+            return boolval($resultado);
         }
     }
 ?>
