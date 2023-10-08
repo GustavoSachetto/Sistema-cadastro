@@ -9,11 +9,11 @@
 
     $categorias = $conexao -> consultaBanco(CATEGORIA);
 
+    echo "<main><article>";
+
     if (boolval($categorias) === true) {
 
         $noticias = $conexao -> consultaBanco(NOTICIA . $busca);
-        
-        echo "<main><article>";
         
         if (empty($noticias) == true) {
             echo "<h2>Não foi possivel localizar nenhuma notícia que contenha: <a href='cadastrarNoticias.php'>$termoBusca</a></h2>";
