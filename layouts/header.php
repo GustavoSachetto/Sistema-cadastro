@@ -1,5 +1,6 @@
 <header>
     <h1>Logo</h1>
+    <button id="menu" class="menu"><img src="img/menu.svg" alt="Menu"></button>
     <nav>
         <form action="" method="get">
         <a href="cadastrarNoticias.php">Cadastrar Notícias</a>

@@ -9,6 +9,14 @@
         <link rel="shortcut icon" href="img/lupa.png" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/form.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+               $("#menu").click(function() {
+                    $("nav").slideToggle(100);
+               });
+            });
+        </script>
     </head>
     <body>
          <?php require_once('layouts/header.php') ?> 

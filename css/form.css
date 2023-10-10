@@ -1,4 +1,3 @@
-
 main form {    
     display: flex;
     flex-direction: column;
@@ -60,4 +59,12 @@ form fieldset p {
 
 .erro {
     color: #c43333;
+}
+
+@media (max-width:900px) {
+    main form {    
+        min-height: 480px;
+        max-height: 780px;
+        margin: 30px 10px;
+    }
 }
