@@ -44,21 +44,30 @@
         
         public function insereNoticia ($cadCategoria, $cadTitulo, $cadConteudo) {
             $insereNoticia = $this -> pdo -> prepare("insert into noticia(titulo, conteudo, tipoCategoria) values (:titulo, :conteudo, :tipoCategoria)");
-
-            $consultaProximoAI = "SHOW TABLE STATUS LIKE 'noticia'";
-            $resultado = $this -> consultaBanco($consultaProximoAI);
-        
-            $tipoCategoria = $this -> consultaCategoria($cadCategoria);
             
-            $insereNoticia -> bindValue(':titulo', $cadTitulo);
-            $insereNoticia -> bindValue(':conteudo', $cadConteudo);
-            $insereNoticia -> bindValue(':tipoCategoria', $tipoCategoria);
-            $insereNoticia -> execute();
+            $consultaExiste = "SELECT * FROM noticia WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND tipoCategoria = '$cadCategoria'";
+            $teste = $this -> consultaBanco($consultaExiste);
             
-            $consultaNoticia = "SELECT * FROM noticia WHERE codNoticia = ". $resultado[0]['Auto_increment'];
-            $resultado = $this -> consultaBanco($consultaNoticia);
+            if (boolval($teste) === true) {
+                return false;
+            } else {
+                $consultaProximoAI = "SHOW TABLE STATUS LIKE 'noticia'";
+                $resultado = $this -> consultaBanco($consultaProximoAI);
+                
+                $tipoCategoria = $this -> consultaCategoria($cadCategoria);
 
-            return boolval($resultado);
+                $insereNoticia -> bindValue(':titulo', $cadTitulo);
+                $insereNoticia -> bindValue(':conteudo', $cadConteudo);
+                $insereNoticia -> bindValue(':tipoCategoria', $tipoCategoria);
+
+                $insereNoticia -> execute();
+
+                $consultaNoticia = "SELECT * FROM noticia WHERE codNoticia = ". $resultado[0]['Auto_increment'];
+                $resultado = $this -> consultaBanco($consultaNoticia);
+    
+                return boolval($resultado);
+            }
+            
         }
     }
 ?>

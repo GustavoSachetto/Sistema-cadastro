@@ -15,7 +15,7 @@
         if ($resultado === true) {
             echo "<p class='sucesso'>Notícia cadastrada com sucesso!</p>";
         } else {
-            echo "<p class='erro'>Notícia não foi cadastrada!</p>";
+            echo "<p class='erro'>Notícia não pode ser cadastrada!</p>";
         }
     }
 ?>

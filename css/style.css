@@ -27,6 +27,10 @@ header {
     background-color: #d4d4d4;
 }
 
+.menu {
+    display: none;
+}
+
 h1 {
     font-size: 30px;
 }
