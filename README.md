@@ -13,5 +13,3 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 * __CSS:__ Estilização da Página, Formulario e Exibição das notícias.
 
 * __HTML:__ Formulário de cadastro e busca das notícias.
-
-* __JQUERY:__ Menu responsivo.
