@@ -4,6 +4,18 @@ Sistema de cadastro é uma projeto baseado em uma prova __BACK-END__ onde atrav�
 
 __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
+## Tecnologias utilizadas:
+
+* __PHP:__ Conexão do banco atráves do __PDO__ e todas as fuções de consulta ou cadastro das notícias.
+  
+* __SQL:__ Criação do banco de dados utilizando principalmente __PK__ e __FK__ nas tabelas.
+
+* __CSS:__ Responsivo, Estilização da Página, Formulario e Exibição das notícias.
+
+* __HTML:__ Formulário de cadastro e busca das notícias.
+
+* __JQUERY:__ Menu responsivo.
+
 ## A Prova:
 
 __1) De acordo com o wireframe fornecido na pasta design, implemente um sistema em PHP que siga as diretrizes abaixo:__
@@ -21,15 +33,3 @@ __1) De acordo com o wireframe fornecido na pasta design, implemente um sistema 
 __2) Ao término da prova você deverá enviar os arquivos implementados com todos os seus recursos incluindo um backup da base de dados.__
 
 _Prova desenvolvida pela DevMedia._
-
-## Tecnologias utilizadas:
-
-* __PHP:__ Conexão do banco atráves do __PDO__ e todas as fuções de consulta ou cadastro das notícias.
-  
-* __SQL:__ Criação do banco de dados utilizando principalmente __PK__ e __FK__ nas tabelas.
-
-* __CSS:__ Responsivo, Estilização da Página, Formulario e Exibição das notícias.
-
-* __HTML:__ Formulário de cadastro e busca das notícias.
-
-* __JQUERY:__ Menu responsivo.
