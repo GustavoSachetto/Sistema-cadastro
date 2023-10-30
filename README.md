@@ -4,7 +4,7 @@ Sistema de cadastro é uma projeto baseado em uma prova __BACK-END__ onde atrav�
 
 __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
-## Prova:
+## A Prova:
 
 __1) De acordo com o wireframe fornecido na pasta design, implemente um sistema em PHP que siga as diretrizes abaixo:__
 
@@ -19,6 +19,8 @@ __1) De acordo com o wireframe fornecido na pasta design, implemente um sistema 
 * O conteúdo deverá ser responsivo (se tiver conhecimento utilize o conceito do CSS Flexbox)
 
 __2) Ao término da prova você deverá enviar os arquivos implementados com todos os seus recursos incluindo um backup da base de dados.__
+
+_Prova desenvolvida pela DevMedia._
 
 ## Tecnologias utilizadas:
 
