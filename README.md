@@ -6,7 +6,7 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
 ## Prova:
 
-__De acordo com o wireframe fornecido, implemente um sistema em PHP que siga as diretrizes abaixo:__
+__1) De acordo com o wireframe fornecido, implemente um sistema em PHP que siga as diretrizes abaixo:__
 
 * Cadastro de notícias em um banco de dados (MySQL)
 
@@ -18,7 +18,7 @@ __De acordo com o wireframe fornecido, implemente um sistema em PHP que siga as 
 
 * O conteúdo deverá ser responsivo (se tiver conhecimento utilize o conceito do CSS Flexbox)
 
-Ao término da prova você deverá enviar os arquivos implementados com todos os seus recursos incluindo um backup da base de dados.
+__2) Ao término da prova você deverá enviar os arquivos implementados com todos os seus recursos incluindo um backup da base de dados.__
 
 ## Tecnologias utilizadas:
 
