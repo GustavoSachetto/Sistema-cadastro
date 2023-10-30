@@ -6,7 +6,7 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
 ## Prova:
 
-__1) De acordo com o wireframe fornecido, implemente um sistema em PHP que siga as diretrizes abaixo:__
+__1) De acordo com o wireframe fornecido na pasta design, implemente um sistema em PHP que siga as diretrizes abaixo:__
 
 * Cadastro de notícias em um banco de dados (MySQL)
 
