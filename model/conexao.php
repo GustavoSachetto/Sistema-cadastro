@@ -33,7 +33,7 @@
                 $resultado = $this -> consultaBanco($consulta);
             } 
             
-            return $resultado[0]['tipo'];
+            return $resultado[0]['id'];
         }
         
         public function insereCategoria($categoria) {
@@ -43,9 +43,9 @@
         }
         
         public function insereNoticia ($cadCategoria, $cadTitulo, $cadConteudo) {
-            $insereNoticia = $this -> pdo -> prepare("insert into noticia(titulo, conteudo, tipoCategoria) values (:titulo, :conteudo, :tipoCategoria)");
+            $insereNoticia = $this -> pdo -> prepare("insert into noticia(titulo, conteudo, idCategoria) values (:titulo, :conteudo, :idCategoria)");
             
-            $consultaExiste = "SELECT * FROM noticia WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND tipoCategoria = '$cadCategoria'";
+            $consultaExiste = "SELECT * FROM noticia WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND idCategoria = '$cadCategoria'";
             $teste = $this -> consultaBanco($consultaExiste);
             
             if (boolval($teste) === true) {
@@ -54,11 +54,11 @@
                 $consultaProximoAI = "SHOW TABLE STATUS LIKE 'noticia'";
                 $resultado = $this -> consultaBanco($consultaProximoAI);
                 
-                $tipoCategoria = $this -> consultaCategoria($cadCategoria);
+                $idCategoria = $this -> consultaCategoria($cadCategoria);
 
                 $insereNoticia -> bindValue(':titulo', $cadTitulo);
                 $insereNoticia -> bindValue(':conteudo', $cadConteudo);
-                $insereNoticia -> bindValue(':tipoCategoria', $tipoCategoria);
+                $insereNoticia -> bindValue(':idCategoria', $idCategoria);
 
                 $insereNoticia -> execute();
 
