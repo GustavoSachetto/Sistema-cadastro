@@ -4,27 +4,32 @@
     $config = parse_ini_file('model/config.ini');
     $conexao = new conexao ($config['dbname'], $config['host'], $config['user'], $config['password']);
 
-    const NOTICIA = "SELECT noticia.titulo, noticia.conteudo, categoria.tipo FROM noticia
-    INNER JOIN categoria ON categoria.id = noticia.idCategoria";
+    const CATEGORIA = "SELECT * FROM categoria ORDER BY id ASC";
+    const NOTICIA = "SELECT * FROM noticia";
 
-    const VERIFICA = "SELECT count(*) FROM noticia";
-
-    $verifica = $conexao -> consultaBanco(VERIFICA);
+    $categorias = $conexao -> consultaBanco(CATEGORIA);
 
     echo "<main><article>";
 
-    if (boolval($verifica) === true) {
+    if (boolval($categorias) === true) {
 
-        $noticias = $conexao -> consultaBanco(NOTICIA . $busca . " ORDER BY codNoticia DESC");
+        $noticias = $conexao -> consultaBanco(NOTICIA . $busca);
         
         if (empty($noticias) == true) {
             echo "<h2>Não foi possivel localizar nenhuma notícia que contenha: <a href='cadastrarNoticias.php'>$termoBusca</a></h2>";
-        } else {         
+        } else {
+            function verificaTipo($categorias, $tipoCategoria) {
+                foreach ($categorias as $categoria) {
+                    if ($tipoCategoria === $categoria['tipo']) {
+                        return $categoria['tipo'];
+                    }
+                }
+            }            
 
             foreach ($noticias as $noticia) {
                 $titulo = $noticia['titulo'];
                 $conteudo = $noticia['conteudo'];
-                $tipo = $noticia['tipo'];
+                $tipo = verificaTipo($categorias, $noticia['tipoCategoria']);
     
                 echo "
                     <section>

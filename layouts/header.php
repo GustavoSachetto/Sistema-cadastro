@@ -11,11 +11,11 @@
     </nav>
 </header>
 <?php 
-    $busca = "";
+    $busca = " ORDER BY codNoticia DESC";
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         if (empty($_GET['txtPesquisa']) == false) {
             $termoBusca = addslashes($_GET['txtPesquisa']);
-            $busca = " WHERE titulo LIKE '%$termoBusca%' OR tipo LIKE '%$termoBusca%'";
+            $busca = " WHERE titulo LIKE '%$termoBusca%' OR tipoCategoria LIKE '%$termoBusca%'";
         }
     } 
 ?>
