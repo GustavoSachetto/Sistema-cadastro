@@ -13,8 +13,8 @@ create table noticia (
     conteudo varchar(250) not null,
     
     constraint uqNoticia
-	unique (titulo, conteudo, tipoCategoria),
+	unique (titulo, conteudo, idCategoria),
     
-    tipoCategoria char(20) not null,
-	constraint fktipoCategoria foreign key (tipoCategoria) references categoria (tipo)
+    idCategoria int not null,
+	constraint fkidcategoria foreign key (idCategoria) references categoria (id)
 );
