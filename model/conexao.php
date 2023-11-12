@@ -37,15 +37,16 @@
         }
         
         public function insereCategoria($categoria) {
-            $insereCategoria = $this -> pdo -> prepare("insert into categoria(tipo) value (:tipo)");
+            $insereCategoria = $this -> pdo -> prepare("INSERT INTO categoria(tipo) VALUE (:tipo)");
             $insereCategoria -> bindValue(':tipo', $categoria);
             $insereCategoria -> execute();
         }
         
         public function insereNoticia ($cadCategoria, $cadTitulo, $cadConteudo) {
-            $insereNoticia = $this -> pdo -> prepare("insert into noticia(titulo, conteudo, idCategoria) values (:titulo, :conteudo, :idCategoria)");
+            $insereNoticia = $this -> pdo -> prepare("INSERT INTO noticia(titulo, conteudo, idCategoria) VALUES (:titulo, :conteudo, :idCategoria)");
             
-            $consultaExiste = "SELECT * FROM noticia WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND idCategoria = '$cadCategoria'";
+            $consultaExiste = "SELECT noticia.titulo, noticia.conteudo, categoria.tipo FROM noticia
+            INNER JOIN categoria ON noticia.idCategoria = categoria.id WHERE titulo = '$cadTitulo' AND conteudo = '$cadConteudo' AND categoria.tipo = '$cadCategoria'";
             $teste = $this -> consultaBanco($consultaExiste);
             
             if (boolval($teste) === true) {
