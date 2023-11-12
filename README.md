@@ -1,6 +1,6 @@
 # Sistema de cadastro
 
-Sistema de cadastro é uma projeto baseado em uma prova __BACK-END__ onde através do site é possivel cadastrar e pesquisar noticías. __Foi utilizado como base a conexão com o banco de dados através do PDO.__ 
+Sistema de cadastro é um projeto baseado em uma prova __BACK-END__ onde através do site é possivel cadastrar e pesquisar noticías. __Foi utilizado como base a conexão com o banco de dados através do PDO.__ 
 
 __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
@@ -15,3 +15,22 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 * __HTML:__ Formulário de cadastro e busca das notícias.
 
 * __JQUERY:__ Menu responsivo.
+
+## A Prova:
+
+__1) De acordo com o wireframe fornecido na pasta design, implemente um sistema em PHP que siga as diretrizes abaixo:__
+
+* Cadastro de notícias em um banco de dados (MySQL)
+
+* Cada notícia deve possuir obrigatoriamente os campos de título, conteúdo e sua categoria. Utilize quantas tabelas achar necessário.
+
+* Permita buscar notícias previamente cadastradas pelo seu título ou categoria
+
+* Utilize recursos CSS e estilize a página para deixar com boa aparência para o usuário (não utilize bootstrap)
+
+* O conteúdo deverá ser responsivo (se tiver conhecimento utilize o conceito do CSS Flexbox)
+
+__2) Ao término da prova você deverá enviar os arquivos implementados com todos os seus recursos incluindo um backup da base de dados.__
+
+***********************************************
+_Prova desenvolvida pela DevMedia._
