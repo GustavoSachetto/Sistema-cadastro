@@ -1,10 +1,12 @@
 # Sistema de cadastro
+![image](https://github.com/user-attachments/assets/cc970e1b-faf1-4452-b595-c048b8a014c8)
 
+## Sobre
 Sistema de cadastro é um projeto baseado em uma prova __BACK-END__ onde através do site é possivel cadastrar e pesquisar noticías. __Foi utilizado como base a conexão com o banco de dados através do PDO.__ 
 
-__Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
+* __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
-## Tecnologias utilizadas:
+## Tecnologias
 
 * __PHP:__ Conexão do banco atráves do __PDO__ e todas as fuções de consulta ou cadastro das notícias.
   
@@ -16,7 +18,7 @@ __Link de acesso:__ https://gustavosachettocruz.000webhostapp.com/index.php
 
 * __JQUERY:__ Menu responsivo.
 
-## A Prova:
+## Sobre a prova
 
 __1) De acordo com o wireframe fornecido na pasta design, implemente um sistema em PHP que siga as diretrizes abaixo:__
 
